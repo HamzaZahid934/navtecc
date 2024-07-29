@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+section input {
+  border: 2px groove;
+}
+
+header h1 {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: cadetblue;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-style: bold;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+button {
+  color: white;
+  background-color: crimson;
+  padding: 5px;
+  border-radius: 6px;
+  transition-duration: 0.4s;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: darkgreen;
+  border: white;
+  font-size: medium;
+}
+
+select {
+  background-color: white;
+  color: black;
+}
+
+ol {
+  color: red;
+}

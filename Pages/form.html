@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Profile</title>
+    <link rel="Stylesheet" href="../CSS/Form.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Candidate Profile</h1>
+      <section>
+        <h2>Instructions</h2>
+        <ol>
+          <li>Enter your full name as per your CNIC/Passport.</li>
+          <li>
+            Make sure to provide valid and accessible phone No and email address
+            for correspondence.
+          </li>
+          <li>
+            Before filling this form please keep ready a picture of your CNIC
+            (250kb size), your picture (250kb size), picture of your last
+            degree/certificate (250kb size).
+          </li>
+        </ol>
+      </section>
+    </header>
+    <!--Basic info section-->
+    <section>
+      <h2>Basic Information</h2>
+      <form>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" /><br /><br />
+
+        <label for="fathersName">Father's Name:</label>
+        <input type="text" id="fathersName" name="fathersName" /><br /><br />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="Other">Other</option></select
+        ><br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" /><br /><br />
+
+        <label for="cnic">CNIC/POR NO:</label>
+        <input type="text" id="cnic" name="cnic" /><br /><br />
+
+        <label for="mobile">Mobile No:</label>
+        <input type="text" id="mobile" name="mobile" /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="residence">District of Residence:</label>
+        <input type="text" id="residence" name="residence" /><br /><br />
+
+        <label for="domicile">Domicile:</label>
+        <input type="text" id="domicile" name="domicile" /><br /><br />
+
+        <label for="address">Postal Address:</label>
+        <input type="text" id="address" name="address" /><br /><br />
+
+        <label for="zakat">Eligible for Zakat:</label>
+        <input type="checkbox" id="zakat" name="zakat" /><br />
+
+        <label for="hafiz">Hafiz-e-Quran:</label>
+        <input type="checkbox" id="hafiz" name="hafiz" /><br />
+
+        <label for="sportsman">Certified Sportsman:</label>
+        <input type="checkbox" id="sportsman" name="sportsman" /><br />
+
+        <label for="orphan">Orphan:</label>
+        <input type="checkbox" id="orphan" name="orphan" /><br />
+
+        <label for="widow">Widow:</label>
+        <input type="checkbox" id="widow" name="widow" /><br />
+
+        <label for="divorced">Divorced:</label>
+        <input type="checkbox" id="divorced" name="divorced" /><br />
+
+        <label for="disabled">Disable:</label>
+        <input type="checkbox" id="disabled" name="disabled" /><br /><br />
+
+        <button type="submit">Save Record</button>
+      </form>
+    </section>
+    <!-- File Upload section-->
+    <section>
+      <h2>Upload Picture</h2>
+      <input type="file" id="uploadPicture" name="uploadPicture" /><br /><br />
+      <h2>Upload CNIC Front</h2>
+      <input
+        type="file"
+        id="uploadCnicFront"
+        name="uploadCnicFront"
+      /><br /><br />
+    </section>
+
+    <!--Section for qualifiaction details-->
+    <section>
+      <h2>Qualification Details</h2>
+      <form>
+        <label for="qualification">Qualification:</label>
+        <input
+          type="text"
+          id="qualification"
+          name="qualification"
+        /><br /><br />
+
+        <label for="instituteName">Institute Name:</label>
+        <input
+          type="text"
+          id="instituteName"
+          name="instituteName"
+        /><br /><br />
+
+        <label for="percentage">Percentage:</label>
+        <input type="text" id="percentage" name="percentage" /><br /><br />
+
+        <label for="highestQualification"
+          >Is this your Highest Qualification?</label
+        >
+        <input
+          type="checkbox"
+          id="highestQualification"
+          name="highestQualification"
+        /><br /><br />
+
+        <button type="button">Add Qualification</button>
+      </form>
+    </section>
+    <!--Education Section table-->
+    <section>
+      <h2>Education Level</h2>
+      <table style="border: 1">
+        <tr>
+          <th>Institute</th>
+          <th>Percentage</th>
+          <th>Highest Qualification</th>
+        </tr>
+      </table>
+    </section>
+
+    <footer>
+      <p>© By NAVTTC 2024</p>
+      <p>
+        For details and Technical Assistance please call us on Navttc Toll Free
+        number 0800-88866 or dial 051-9044445, 051-9044449 From 8:30AM to 4:30PM
+        (Monday - Friday)
+      </p>
+    </footer>
+  </body>
+</html>

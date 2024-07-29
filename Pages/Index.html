@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </header>
+  <body style="background-color: rgb(156, 222, 235)">
+    <form>
+      <h2>Registration Form</h2>
+
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Your Name"
+        required
+      />
+      <br />
+      <br />
+      <label for="Email"> Email </label>
+      <input
+        type="email"
+        name="Email"
+        id="Email"
+        placeholder=" Your Email"
+        required
+      />
+      <br />
+      <br />
+      <label for="Password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="your Password"
+        required
+      />
+      <br />
+      <br />
+      <label for="Gender">Select Gender:</label>
+      <select id="Gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <label for="Program">Select Program:</label>
+      <select id="Program" required>
+        <option value="CS">CS</option>
+        <option value="SE">SE</option>
+        <option value="IT">IT</option>
+      </select>
+      <br />
+      <br />
+      <label for="Graduated"> Are you Graduated?</label>
+      <input type="radio" name="Graduated" id="Graduated" value="Yes" />
+      <label for="Graduated">Yes</label>
+      <input type="radio" name="Graduated" id="Graduated" value="NO" />
+      <label for="Graduated">No</label>
+      <br />
+      <br />
+      <label for="Introduction">Tell us about Yourself:</label>
+      <textarea
+        id="Introduction"
+        name="Introduction"
+        rows="4"
+        cols="50"
+        placeholder="Type Here"
+      ></textarea>
+      <br />
+      <br />
+      <label> Select date</label>
+      <input type="date" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

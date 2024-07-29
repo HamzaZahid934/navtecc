@@ -1,0 +1,25 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+
+  }
+  .header,
+  .section {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    
+  }
+  .header p {
+    margin: 5px 0;
+  }
+  .section h2 {
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+.header img {
+    align-self: auto;
+
+}
