@@ -7,6 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6; /* Improved readability */
 }
 
 /* Navbar Styles */
@@ -17,6 +18,14 @@ body {
   padding: 10px 20px;
   background-color: transparent;
   color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Keep navbar on top */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: #f8f8f8;
 }
 
 .navbar-left {
@@ -142,10 +151,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url("path-to-image.jpg"); /* Background image for the hero section */
 }
 
 .hero h1 {
-  font-family: Means Web, Georgia, Times, Times New Roman, serif;
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
   font-size: 2.8em;
   margin-bottom: 20px;
 }
@@ -169,42 +181,43 @@ body {
   box-shadow: 1px 8px black;
   transition: 0.3s;
 }
+
 .hero .container {
   width: 50%;
+  max-width: 600px;
 }
 
-/* workflow section*/
-
+/* Workflow Section */
 .workflow {
   background-color: #17497e;
   padding: 150px 0;
   text-align: left;
   color: black;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
+
 .workflow .container {
   display: flex;
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
 }
 
-.workflow .container .content {
-  margin-left: 100px;
-  margin-top: 150px;
-  margin-bottom: 150px;
-  width: 40%;
-  align-content: center;
-  align-items: center;
+.workflow .content {
+  margin: 0 20px; /* Use margin for spacing */
+  width: 100%;
+  max-width: 500px;
+  color: white;
+  text-align: center; /* Center align text on smaller screens */
 }
 
-.workflow.container.content-img {
-  width: 60%;
-  align-items: flex-end;
-  align-content: flex-end;
+.workflow .content-img {
+  width: 100%;
+  max-width: 500px;
 }
 
 .workflow h1 {
-  font-family: Means Web, Georgia, Times, Times New Roman, serif;
+  font-family: "Means Web", Georgia, Times, "Times New Roman", serif;
   font-size: 2.5em;
   margin-bottom: 20px;
   color: white;
@@ -215,6 +228,7 @@ body {
   margin-bottom: 30px;
   color: white;
 }
+
 .workflow button {
   background-color: rgb(255, 212, 19);
   color: black;
@@ -230,33 +244,143 @@ body {
   transition: 0.3s;
 }
 
-/* progress section*/
-
-.Progress {
+/* Progress Section */
+.progress {
   background-color: black;
   padding: 50px 0;
   text-align: center;
+  color: white;
 }
 
-.Progress .container {
+.progress .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 50px 0px;
+  margin: 50px 0;
 }
 
-.Progress .Section-item {
+.progress .section-item {
   margin: 5px;
+  flex: 1;
+  min-width: 200px; /* Ensures the flex items don't shrink too much */
+  max-width: 300px; /* Keeps the section-item manageable */
 }
 
-.Progress .Section-item h1 {
-  font-size: 50px;
+.progress .section-item h1 {
+  font-size: 2em;
   font-weight: bold;
   margin-bottom: 10px;
   color: white;
 }
 
-.Progress .Section-item p {
-  font-size: 20px;
+.progress .section-item p {
+  font-size: 1em;
   color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .navbar-links {
+    margin-left: 10px;
+  }
+
+  .navbar-links a {
+    padding: 8px 12px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.3em;
+  }
+
+  .workflow .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .workflow .content {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .navbar-links li {
+    margin: 5px 0;
+  }
+
+  .navbar-links a {
+    padding: 10px 15px;
+  }
+
+  .btn {
+    margin: 5px 0;
+  }
+
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .workflow {
+    padding: 100px 20px;
+  }
+
+  .workflow .content {
+    margin: 20px 0;
+  }
+
+  .progress .section-item {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .progress .section-item h1 {
+    font-size: 1.5em;
+  }
+
+  .progress .section-item p {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide navbar links on small screens */
+  }
+
+  .navbar.scrolled .navbar-links {
+    display: flex; /* Show links when navbar is scrolled */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    z-index: 999;
+  }
+
+  .navbar-links li {
+    margin: 5px 0;
+  }
 }
