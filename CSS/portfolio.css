@@ -1,4 +1,3 @@
-/* Reset some default browser styles */
 * {
   margin: 0;
   padding: 0;
@@ -63,17 +62,17 @@ header {
 }
 
 .profile-picture {
-  width: 150px; /* Set width to control size */
-  height: 150px; /* Set height to control size */
-  border-radius: 50%; /* Make the picture round */
-  margin-bottom: 20px; /* Add some spacing below the image */
-  border: 5px solid #333; /* Add a border for a stylish look */
-  transition: transform 0.3s ease, border-color 0.3s ease; /* Add transition for hover effects */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #333;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .profile-picture:hover {
-  transform: scale(1.05); /* Slightly enlarge the image on hover */
-  border-color: #575757; /* Change border color on hover */
+  transform: scale(1.05);
+  border-color: #575757;
 }
 
 .hero h1 {
@@ -134,6 +133,51 @@ header {
   padding: 0 15px 15px;
   color: #666;
 }
+.mern-stack {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.mern-stack h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.mern-logos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+
+.logo-item {
+  display: grid;
+  justify-items: center;
+}
+
+.logo-item img {
+  width: 80px;
+  height: auto;
+  padding: 4px;
+  border: 3px solid black;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.logo-item img:hover {
+  transform: scale(1.1);
+}
 
 .contact {
   padding: 40px 20px;
@@ -172,7 +216,7 @@ header {
 .contact-form button {
   padding: 10px 15px;
   font-size: 1rem;
-  color: #fff;
+  color: black;
   background-color: #f19100;
   border: none;
   border-radius: 4px;
@@ -182,15 +226,123 @@ header {
 
 .contact-form button:hover {
   background-color: #575757;
+  color: #fff;
 }
 
 footer {
   background-color: #f19100;
   color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 20px;
 }
 
-footer p {
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-bottom: 20px;
+  justify-items: center;
+}
+
+.contact-info h3,
+.social-links h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p,
+.social-links ul {
+  font-size: 1rem;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #ddd;
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  background-color: transparent;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.footer-bottom p {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .nav-links {
+    grid-auto-flow: row;
+    justify-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
 }
