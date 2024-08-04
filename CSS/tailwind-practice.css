@@ -1,0 +1,8 @@
+.bg-gradient-bubble {
+  background: radial-gradient(
+      circle at bottom left,
+      rgba(0, 255, 255, 0.5),
+      transparent
+    ),
+    radial-gradient(circle at top right, rgba(255, 0, 255, 0.5), transparent);
+}
