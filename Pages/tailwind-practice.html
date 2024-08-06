@@ -8,30 +8,40 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="bg-white shadow-sm">
-      <div
-        class="container mx-auto px-4 flex justify-between items-center py-3"
-      >
-        <!-- Logo Section -->
-        <div class="flex items-center space-x-2">
-          <span class="text-2xl font-bold text-gray-800">Flone.</span>
+    <header class="bg-white shadow-md py-5">
+      <div class="container mx-auto flex items-center justify-evenly">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="/assets/flone-black.png" alt="Logo" class="h-8" />
         </div>
+
         <!-- Navigation Links -->
-        <div class="hidden md:flex space-x-8 text-gray-700">
-          <a href="#" class="hover:text-gray-900">Demos</a>
-          <a href="#" class="hover:text-gray-900">Features</a>
-          <a href="#" class="hover:text-gray-900">Support</a>
-        </div>
-        <!-- Purchase Button -->
-        <div>
-          <a
-            href="#"
-            class="bg-white text-gray-700 hover:bg-gray-100 focus:ring focus:ring-gray-200 transition ease-in-out duration-150 px-4 py-2 rounded shadow-md"
-            >Purchase</a
-          >
-        </div>
+        <nav class="hidden md:flex justify-center space-x-8">
+          <a href="#" class="text-gray-800 hover:text-black">Home</a>
+          <a href="#" class="text-gray-800 hover:text-black">Shop</a>
+          <a href="#" class="text-gray-800 hover:text-black">Collection</a>
+          <a href="#" class="text-gray-800 hover:text-black">Pages</a>
+          <a href="#" class="text-gray-800 hover:text-black">Blog</a>
+          <a href="#" class="text-gray-800 hover:text-black">Contact Us</a>
+        </nav>
       </div>
-    </nav>
+      <!-- Icons -->
+      <div class="flex items-center space-x-6">
+        <a href="#" class="text-gray-800 hover:text-black">
+          <i class="fas fa-search text-xl"></i>
+        </a>
+        <a href="#" class="text-gray-800 hover:text-black">
+          <i class="fas fa-user text-xl"></i>
+        </a>
+        <a href="#" class="text-gray-800 hover:text-black">
+          <i class="fas fa-heart text-xl"></i>
+        </a>
+        <a href="#" class="text-gray-800 hover:text-black">
+          <i class="fas fa-shopping-bag text-xl"></i>
+        </a>
+      </div>
+    </header>
+
     <!-- Hero Section -->
     <section class="bg-gray-100 py-16">
       <div
@@ -53,7 +63,7 @@
           <div class="relative">
             <img
               class="w-full rounded-lg shadow-lg"
-              src="../assets/brook-landing-new-slider-slide-image-02.png"
+              src="../assets/Webflow 1.jpg"
               alt="Main Product"
             />
           </div>
@@ -65,9 +75,7 @@
       <div class="container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
           <!-- Service Item 1 -->
-          <div
-            class="text-center border-r border-gray-200 last:border-r-0 px-4"
-          >
+          <div class="border-r border-gray-200 last:border-r-0 px-4">
             <h3 class="text-xl font-semibold text-gray-800">
               Latest React & Redux
             </h3>
@@ -109,7 +117,9 @@
       <div class="container mx-auto p-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <!-- Card 1 -->
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 hover:shadow-red-950 transition-transform duration-300"
+          >
             <img
               class="w-full"
               src="../assets/fashion-home-6.png"
@@ -121,7 +131,9 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 hover:shadow-red-950 transition-transform duration-300"
+          >
             <img
               class="w-full"
               src="../assets/fashion-home-5.png"

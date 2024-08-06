@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Page 1</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN for icons (optional) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-5">
+      <div class="container mx-auto flex items-center justify-evenly">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="/assets/flone-black.png" alt="Logo" class="h-8" />
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex justify-center space-x-8">
+          <a href="#" class="text-gray-800 hover:text-black">Home</a>
+          <a href="#" class="text-gray-800 hover:text-black">Shop</a>
+          <a href="#" class="text-gray-800 hover:text-black">Collection</a>
+          <a href="#" class="text-gray-800 hover:text-black">Pages</a>
+          <a href="#" class="text-gray-800 hover:text-black">Blog</a>
+          <a href="#" class="text-gray-800 hover:text-black">Contact Us</a>
+        </nav>
+
+        <!-- Icons -->
+        <div class="flex items-center space-x-6">
+          <a href="#" class="text-gray-800 hover:text-black">
+            <i class="fas fa-search text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-800 hover:text-black">
+            <i class="fas fa-user text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-800 hover:text-black">
+            <i class="fas fa-heart text-xl"></i>
+          </a>
+          <a href="#" class="text-gray-800 hover:text-black">
+            <i class="fas fa-shopping-bag text-xl"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-12 bg-purple-200">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-around pl-40"
+      >
+        <!-- Left Side Content -->
+        <div
+          class="flex-1 flex flex-col items-start text-center md:text-left pl-8"
+        >
+          <!-- Small Heading -->
+          <h4 class="text-lg font-medium text-gray-700 mb-2">Smart Products</h4>
+          <!-- Bigger Heading -->
+          <h2 class="text-7xl font-normal tracking-wide text-gray-900 mb-4">
+            Winter Offer <br />
+            2024 Collection
+          </h2>
+          <!-- Button -->
+          <a
+            href="#"
+            class="inline-block px-14 py-4 text-black font-semibold rounded-lg border-black border-2 shadow-lg hover:bg-blue-700 transition-colors duration-300"
+          >
+            Shop Now
+          </a>
+        </div>
+        <!-- Right Side Image -->
+        <div class="flex-1 flex justify-center items-center p-6">
+          <img
+            src="/assets/single-slide-1.png"
+            alt="Hero Image"
+            class="w-full h-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-gray-100">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <!-- Box 1 -->
+        <div class="flex items-start bg-white p-6">
+          <img
+            src="/assets/support-1.png"
+            alt="Box 1 Image"
+            class="w-16 h-16 mr-4"
+          />
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Free Shipping
+            </h3>
+            <p class="text-gray-600">Free shipping on all order.</p>
+          </div>
+        </div>
+        <!-- Box 2 -->
+        <div class="flex items-start bg-white p-6">
+          <img
+            src="/assets/support-2.png"
+            alt="Box 2 Image"
+            class="w-16 h-16 mr-4"
+          />
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Support 24/7
+            </h3>
+            <p class="text-gray-600">Free shipping on all order</p>
+          </div>
+        </div>
+        <!-- Box 3 -->
+        <div class="flex items-start bg-white p-6">
+          <img
+            src="/assets/support-3.png"
+            alt="Box 3 Image"
+            class="w-16 h-16 mr-4"
+          />
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Money Return
+            </h3>
+            <p class="text-gray-600">Free shipping on all order</p>
+          </div>
+        </div>
+        <!-- Box 4 -->
+        <div class="flex items-start bg-white p-6">
+          <img
+            src="/assets/support-4.png"
+            alt="Box 4 Image"
+            class="w-16 h-16 mr-4"
+          />
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Order Discount
+            </h3>
+            <p class="text-gray-600">Free shipping on all order.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-gray-100 text-center">
+      <!-- Top Heading -->
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">
+        --------DAILY DEALS!--------
+      </h2>
+
+      <!-- Bottom Headings -->
+      <div class="flex justify-center gap-6">
+        <h3 class="text-xl font-semibold text-gray-800">New Arrivals</h3>
+        <h3 class="text-xl font-semibold text-gray-800">Best Sellers</h3>
+        <h3 class="text-xl font-semibold text-gray-800">Sale Items</h3>
+      </div>
+    </section>
+
+    <section class="py-12 m-20">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <!-- Image Box 1 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <!-- Top Image -->
+          <img
+            src="/assets/3.jpg"
+            alt="Image 1"
+            class="w-full h-50 object-cover mb-4"
+          />
+          <!-- Description -->
+          <p class="text-center text-gray-700 mb-4">
+            This is a description of the product. It provides key details about
+            the item.
+          </p>
+          <!-- Ratings -->
+          <div class="mb-4 text-yellow-500">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9733;</span><span>&#9734;</span>
+          </div>
+          <!-- Price -->
+          <p class="text-xl font-bold text-gray-900">$29.99</p>
+        </div>
+
+        <!-- Image Box 2 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <!-- Top Image -->
+          <img
+            src="/assets/4.jpg"
+            alt="Image 2"
+            class="w-full h-50 object-cover rounded-t-lg mb-4"
+          />
+          <!-- Description -->
+          <p class="text-center text-gray-700 mb-4">
+            This is a description of the product. It provides key details about
+            the item.
+          </p>
+          <!-- Ratings -->
+          <div class="mb-4 text-yellow-500">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9733;</span><span>&#9734;</span>
+          </div>
+          <!-- Price -->
+          <p class="text-xl font-bold text-gray-900">$39.99</p>
+        </div>
+
+        <!-- Image Box 3 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <!-- Top Image -->
+          <img
+            src="/assets/5.jpg"
+            alt="Image 3"
+            class="w-full h-50 object-cover rounded-t-lg mb-4"
+          />
+          <!-- Description -->
+          <p class="text-center text-gray-700 mb-4">
+            This is a description of the product. It provides key details about
+            the item.
+          </p>
+          <!-- Ratings -->
+          <div class="mb-4 text-yellow-500">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9734;</span><span>&#9734;</span>
+          </div>
+          <!-- Price -->
+          <p class="text-xl font-bold text-gray-900">$49.99</p>
+        </div>
+
+        <!-- Image Box 4 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <!-- Top Image -->
+          <img
+            src="/assets/6.jpg"
+            alt="Image 4"
+            class="w-full h-50 object-cover rounded-t-lg mb-4"
+          />
+          <!-- Description -->
+          <p class="text-center text-gray-700 mb-4">
+            This is a description of the product. It provides key details about
+            the item.
+          </p>
+          <!-- Ratings -->
+          <div class="mb-4 text-yellow-500">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9734;</span
+            ><span>&#9734;</span><span>&#9734;</span>
+          </div>
+          <!-- Price -->
+          <p class="text-xl font-bold text-gray-900">$59.99</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 m-20">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <!-- Image Box 1 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <!-- Top Image -->
+          <img
+            src="/assets/3.jpg"
+            alt="Image 1"
+            class="w-full h-50 object-cover mb-4"
+          />
+          <!-- Description -->
+          <p class="text-center text-gray-700 mb-4">
+            This is a description of the product. It provides key details about
+            the item.
+          </p>
+          <!-- Ratings -->
+          <div class="mb-4 text-yellow-500">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9733;</span><span>&#9734;</span>
+          </div>
+          <!-- Price -->
+          <p class="text-xl font-bold text-gray-900">$29.99</p>
+        </div>
+
+        <!-- Image Box 2 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <!-- Top Image -->
+          <img
+            src="/assets/4.jpg"
+            alt="Image 2"
+            class="w-full h-50 object-cover rounded-t-lg mb-4"
+          />
+          <!-- Description -->
+          <p class="text-center text-gray-700 mb-4">
+            This is a description of the product. It provides key details about
+            the item.
+          </p>
+          <!-- Ratings -->
+          <div class="mb-4 text-yellow-500">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9733;</span><span>&#9734;</span>
+          </div>
+          <!-- Price -->
+          <p class="text-xl font-bold text-gray-900">$39.99</p>
+        </div>
+
+        <!-- Image Box 3 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <!-- Top Image -->
+          <img
+            src="/assets/5.jpg"
+            alt="Image 3"
+            class="w-full h-50 object-cover rounded-t-lg mb-4"
+          />
+          <!-- Description -->
+          <p class="text-center text-gray-700 mb-4">
+            This is a description of the product. It provides key details about
+            the item.
+          </p>
+          <!-- Ratings -->
+          <div class="mb-4 text-yellow-500">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+            ><span>&#9734;</span><span>&#9734;</span>
+          </div>
+          <!-- Price -->
+          <p class="text-xl font-bold text-gray-900">$49.99</p>
+        </div>
+
+        <!-- Image Box 4 -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <!-- Top Image -->
+          <img
+            src="/assets/6.jpg"
+            alt="Image 4"
+            class="w-full h-50 object-cover rounded-t-lg mb-4"
+          />
+          <!-- Description -->
+          <p class="text-center text-gray-700 mb-4">
+            This is a description of the product. It provides key details about
+            the item.
+          </p>
+          <!-- Ratings -->
+          <div class="mb-4 text-yellow-500">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9734;</span
+            ><span>&#9734;</span><span>&#9734;</span>
+          </div>
+          <!-- Price -->
+          <p class="text-xl font-bold text-gray-900">$59.99</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-gray-100 text-center">
+      <!-- Heading -->
+      <h2 class="text-3xl font-bold text-gray-900 mb-12">Our Blog</h2>
+
+      <!-- Blog Boxes -->
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        <!-- Blog Box 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img
+            src="/assets/blog-1.jpg"
+            alt="Blog Image 1"
+            class="w-full h-50 object-cover rounded-t-lg mb-4"
+          />
+          <div class="mt-[-1.5rem]">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              A guide to latest trends
+            </h3>
+            <p class="text-gray-600">by Admin</p>
+          </div>
+        </div>
+
+        <!-- Blog Box 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img
+            src="/assets/blog-2.jpg"
+            alt="Blog Image 2"
+            class="w-full h-50 object-cover rounded-t-lg mb-4"
+          />
+          <div class="mt-[-1.5rem]">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Five ways to lead a happy life
+            </h3>
+            <p class="text-gray-600">by Admin</p>
+          </div>
+        </div>
+
+        <!-- Blog Box 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img
+            src="/assets/blog-3.jpg"
+            alt="Blog Image 3"
+            class="w-full h-50 object-cover rounded-t-lg mb-4"
+          />
+          <div class="mt-[-1.5rem]">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Tips on having a happy life
+            </h3>
+            <p class="text-gray-600">by Admin</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-200 text-white py-12">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5"
+      >
+        <!-- Column 1: Logo and Copyright -->
+        <div class="flex flex-col items-start mt-7 ml-4">
+          <img
+            src="/assets/flone-logo.png"
+            alt="Logo"
+            class="mb-4 w-32 h-auto"
+          />
+          <p class="text-sm text-gray-800">&copy; 2024 All rights reserved</p>
+        </div>
+
+        <!-- Column 2: About Us -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-800">ABOUT US</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-gray-800 hover:text-white">About us</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-white"
+                >Store location</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-white">Contact</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-white"
+                >Orders tracking</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: (Add Content) -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-800">USEFUL LINKS</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-gray-800 hover:text-white">Returns</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-white"
+                >Support Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-white">Size guide</a>
+            </li>
+            <li><a href="#" class="text-gray-800 hover:text-white">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: (Add Content) -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-800">FOLLOW US</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-gray-800 hover:text-white">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-white">Twitter</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-white">Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-800 hover:text-white">Youtube</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 5: (Add Content) -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-800">SUBSCRIBE</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-gray-800 hover:text-white"
+                >Get E-mail updates about our latest shop and special offers.</a
+              >
+            </li>
+            <li>
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="w-full p-3"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
